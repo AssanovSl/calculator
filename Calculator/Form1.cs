@@ -17,47 +17,36 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Calculate(object sender, EventArgs e)
         {
             double firstArgDouble = Convert.ToDouble(firstArg.Text);
             double secondArgDouble = Convert.ToDouble(secondArg.Text);
 
-            double result = secondArgDouble + firstArgDouble;
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "plus":
+                    result = secondArgDouble + firstArgDouble;
+                    break;
+                case "minus":
+                    result = firstArgDouble - secondArgDouble;
+                    break;
+                case "multiply":
+                    result = secondArgDouble * firstArgDouble;
+                    break;
+                case "divide":
+                    result = firstArgDouble / secondArgDouble;
+                    break;
+                default: 
+                    throw new Exception("Неизвестная операция");
+                    
 
-            outArg.Text = result.ToString();
-
-            
-        }
-
-        private void minus_Click(object sender, EventArgs e)
-        {
-            double firstArgDouble = Convert.ToDouble(firstArg.Text);
-            double secondArgDouble = Convert.ToDouble(secondArg.Text);
-
-            double result = firstArgDouble  - secondArgDouble;
-
-            outArg.Text = result.ToString();
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double firstArgDouble = Convert.ToDouble(firstArg.Text);
-            double secondArgDouble = Convert.ToDouble(secondArg.Text);
-
-            double result = firstArgDouble / secondArgDouble;
+            }
 
             outArg.Text = result.ToString();
         }
 
-        private void multiply_Click(object sender, EventArgs e)
-        {
-            double firstArgDouble = Convert.ToDouble(firstArg.Text);
-            double secondArgDouble = Convert.ToDouble(secondArg.Text);
-
-            double result = secondArgDouble * firstArgDouble;
-
-            outArg.Text = result.ToString();
-        }
+       
     }
 }
