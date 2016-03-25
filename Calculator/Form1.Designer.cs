@@ -28,44 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.firstArg = new System.Windows.Forms.TextBox();
+            this.plus = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
+            this.multiply = new System.Windows.Forms.Button();
+            this.divide = new System.Windows.Forms.Button();
+            this.secondArg = new System.Windows.Forms.TextBox();
+            this.outArg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // firstArg
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(395, 20);
-            this.textBox1.TabIndex = 0;
+            this.firstArg.Location = new System.Drawing.Point(35, 37);
+            this.firstArg.Name = "firstArg";
+            this.firstArg.Size = new System.Drawing.Size(146, 20);
+            this.firstArg.TabIndex = 0;
             // 
-            // button1
+            // plus
             // 
-            this.button1.Location = new System.Drawing.Point(35, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 101);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.plus.Location = new System.Drawing.Point(35, 89);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(89, 101);
+            this.plus.TabIndex = 1;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // minus
             // 
-            this.button2.Location = new System.Drawing.Point(149, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 101);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.minus.Location = new System.Drawing.Point(143, 89);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(97, 101);
+            this.minus.TabIndex = 2;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
+            // 
+            // multiply
+            // 
+            this.multiply.Location = new System.Drawing.Point(260, 89);
+            this.multiply.Name = "multiply";
+            this.multiply.Size = new System.Drawing.Size(97, 101);
+            this.multiply.TabIndex = 3;
+            this.multiply.Text = "*";
+            this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
+            // 
+            // divide
+            // 
+            this.divide.Location = new System.Drawing.Point(377, 89);
+            this.divide.Name = "divide";
+            this.divide.Size = new System.Drawing.Size(97, 101);
+            this.divide.TabIndex = 4;
+            this.divide.Text = "/";
+            this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // secondArg
+            // 
+            this.secondArg.Location = new System.Drawing.Point(196, 37);
+            this.secondArg.Name = "secondArg";
+            this.secondArg.Size = new System.Drawing.Size(146, 20);
+            this.secondArg.TabIndex = 5;
+            // 
+            // outArg
+            // 
+            this.outArg.AutoSize = true;
+            this.outArg.Location = new System.Drawing.Point(398, 40);
+            this.outArg.Name = "outArg";
+            this.outArg.Size = new System.Drawing.Size(0, 13);
+            this.outArg.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 412);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.outArg);
+            this.Controls.Add(this.secondArg);
+            this.Controls.Add(this.divide);
+            this.Controls.Add(this.multiply);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.plus);
+            this.Controls.Add(this.firstArg);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -75,9 +120,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox firstArg;
+        private System.Windows.Forms.Button minus;
+        private System.Windows.Forms.Button multiply;
+        private System.Windows.Forms.Button divide;
+        private System.Windows.Forms.TextBox secondArg;
+        private System.Windows.Forms.Label outArg;
+        protected System.Windows.Forms.Button plus;
     }
 }
 
