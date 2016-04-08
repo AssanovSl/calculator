@@ -24,25 +24,10 @@ namespace Calculator
             double secondArgDouble = Convert.ToDouble(secondArg.Text);
 
             double result;
-            switch (((Button)sender).Name)
-            {
-                case "plus":
-                    result = secondArgDouble + firstArgDouble;
-                    break;
-                case "minus":
-                    result = firstArgDouble - secondArgDouble;
-                    break;
-                case "multiply":
-                    result = secondArgDouble * firstArgDouble;
-                    break;
-                case "divide":
-                    result = firstArgDouble / secondArgDouble;
-                    break;
-                default: 
-                    throw new Exception("Неизвестная операция");
-                    
+            ICalculator calculator = CalculatorFactory.CreateCalculator(((Button) sender).Name);
 
-            }
+           result = calculator.Calculate(firstArgDouble, secondArgDouble);
+
 
             outArg.Text = result.ToString();
         }
