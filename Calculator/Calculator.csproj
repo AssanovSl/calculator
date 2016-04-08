@@ -53,9 +53,13 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ICalculator.cs" />
+    <Compile Include="IOneCalculator.cs" />
     <Compile Include="Multiplication.cs" />
+    <Compile Include="OneArgFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cosinus.cs" />
+    <Compile Include="Sinus.cs" />
     <Compile Include="Summ.cs" />
     <Compile Include="Sustraction.cs" />
     <EmbeddedResource Include="Form1.resx">

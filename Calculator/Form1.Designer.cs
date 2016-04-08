@@ -35,6 +35,8 @@
             this.divide = new System.Windows.Forms.Button();
             this.secondArg = new System.Windows.Forms.TextBox();
             this.outArg = new System.Windows.Forms.Label();
+            this.sin = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArg
@@ -99,11 +101,33 @@
             this.outArg.Size = new System.Drawing.Size(0, 13);
             this.outArg.TabIndex = 6;
             // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(35, 209);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(89, 101);
+            this.sin.TabIndex = 7;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(143, 209);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(97, 101);
+            this.cos.TabIndex = 8;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 412);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.outArg);
             this.Controls.Add(this.secondArg);
             this.Controls.Add(this.divide);
@@ -127,6 +151,8 @@
         private System.Windows.Forms.TextBox secondArg;
         private System.Windows.Forms.Label outArg;
         protected System.Windows.Forms.Button plus;
+        protected System.Windows.Forms.Button sin;
+        protected System.Windows.Forms.Button cos;
     }
 }
 
