@@ -23,44 +23,24 @@ namespace Calculator
             double firstArgDouble = Convert.ToDouble(firstArg.Text);
             double secondArgDouble = Convert.ToDouble(secondArg.Text);
 
-            double result;
-            ICalculator calculator = CalculatorFactory.CreateCalculator(((Button) sender).Name);
+            ICalculator calculator = CalculatorFactory.CreateCalculator(((Button)sender).Name);
 
-           result = calculator.Calculate(firstArgDouble, secondArgDouble);
-
+            var result = calculator.Calculate(firstArgDouble, secondArgDouble);
 
             outArg.Text = result.ToString();
         }
 
-       private void OneArgCalculate(object sender, EventArgs e)
+        private void OneArgCalculate(object sender, EventArgs e)
         {
             double firstArgDouble = Convert.ToDouble(firstArg.Text);
-            
 
-            double result;
-            IOneCalculator calculator = OneArgFactory.CreateCalculator(((Button) sender).Name);
+            IOneCalculator calculator = OneArgFactory.CreateCalculator(((Button)sender).Name);
 
-            result = calculator.OneArgCalculate(firstArgDouble);
-
+            var result = calculator.OneArgCalculate(firstArgDouble);
 
             outArg.Text = result.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }

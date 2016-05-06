@@ -20,10 +20,15 @@ namespace Calculator
                 case "divide":
                     return new Division();
 
+                case "degree":
+                    return new Degree();
+
                 default:
                     throw new Exception("Неизвестная операция");
                }
         }
+
+     
 
 
 

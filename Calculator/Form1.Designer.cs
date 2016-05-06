@@ -37,6 +37,8 @@
             this.outArg = new System.Windows.Forms.Label();
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
+            this.degree = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArg
@@ -109,7 +111,7 @@
             this.sin.TabIndex = 7;
             this.sin.Text = "sin";
             this.sin.UseVisualStyleBackColor = true;
-            this.sin.Click += new System.EventHandler(this.button1_Click_1);
+            this.sin.Click += new System.EventHandler(this.OneArgCalculate);
             // 
             // cos
             // 
@@ -119,13 +121,35 @@
             this.cos.TabIndex = 8;
             this.cos.Text = "cos";
             this.cos.UseVisualStyleBackColor = true;
-            this.cos.Click += new System.EventHandler(this.button2_Click);
+            this.cos.Click += new System.EventHandler(this.OneArgCalculate);
+            // 
+            // degree
+            // 
+            this.degree.Location = new System.Drawing.Point(260, 209);
+            this.degree.Name = "degree";
+            this.degree.Size = new System.Drawing.Size(97, 101);
+            this.degree.TabIndex = 9;
+            this.degree.Text = "x^y";
+            this.degree.UseVisualStyleBackColor = true;
+            this.degree.Click += new System.EventHandler(this.Calculate);
+            // 
+            // ln
+            // 
+            this.ln.Location = new System.Drawing.Point(377, 209);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(97, 101);
+            this.ln.TabIndex = 10;
+            this.ln.Text = "ln";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.OneArgCalculate);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 412);
+            this.ClientSize = new System.Drawing.Size(507, 481);
+            this.Controls.Add(this.ln);
+            this.Controls.Add(this.degree);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
             this.Controls.Add(this.outArg);
@@ -153,6 +177,8 @@
         protected System.Windows.Forms.Button plus;
         protected System.Windows.Forms.Button sin;
         protected System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button degree;
+        private System.Windows.Forms.Button ln;
     }
 }
 

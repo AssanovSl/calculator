@@ -4,9 +4,9 @@ namespace Calculator
 {
     public static class OneArgFactory
     {
-         public static IOneCalculator CreateCalculator(string name)
+        public static IOneCalculator CreateCalculator(string name)
         {
-            switch(name) 
+            switch (name)
             {
                 case "sin":
                     return new Sinus();
@@ -14,15 +14,12 @@ namespace Calculator
                 case "cos":
                     return new Cosinus();
 
+                case "ln":
+                    return new Ln();
+
                 default:
                     throw new Exception("Неизвестная операция");
-               }
+            }
         }
-
-
-
-
-
-
-    } 
     }
+}

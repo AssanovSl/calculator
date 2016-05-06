@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculatorFactory.cs" />
+    <Compile Include="Degree.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -54,6 +55,7 @@
     </Compile>
     <Compile Include="ICalculator.cs" />
     <Compile Include="IOneCalculator.cs" />
+    <Compile Include="Ln.cs" />
     <Compile Include="Multiplication.cs" />
     <Compile Include="OneArgFactory.cs" />
     <Compile Include="Program.cs" />
