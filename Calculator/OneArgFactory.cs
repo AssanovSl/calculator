@@ -20,9 +20,6 @@ namespace Calculator
                 case "sqrt":
                     return new Root();
 
-                case "desimal":
-                    return new Desimal();
-
                 case "exp":
                     return new Exp();
 

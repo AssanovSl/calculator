@@ -23,6 +23,9 @@ namespace Calculator
                 case "degree":
                     return new Degree();
 
+                case "desimal":
+                    return new Desimal();
+
                 default:
                     throw new Exception("Неизвестная операция");
                }

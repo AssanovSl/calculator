@@ -183,9 +183,9 @@
             this.desimal.Name = "desimal";
             this.desimal.Size = new System.Drawing.Size(97, 101);
             this.desimal.TabIndex = 15;
-            this.desimal.Text = "x/10";
+            this.desimal.Text = "x^1/y";
             this.desimal.UseVisualStyleBackColor = true;
-            this.desimal.Click += new System.EventHandler(this.OneArgCalculate);
+            this.desimal.Click += new System.EventHandler(this.Calculate);
             // 
             // Form1
             // 

@@ -1,12 +1,12 @@
-﻿
+﻿using System;
 namespace Calculator
 {
   
-        public class Desimal : IOneCalculator
+        public class Desimal : ICalculator
     {
-        public double OneArgCalculate(double firstArg)
+        public double Calculate(double firstArg, double secondArg)
         {
-            return firstArg/10;
+            return Math.Pow(firstArg, 1 / secondArg);
         } 
     }
 }
