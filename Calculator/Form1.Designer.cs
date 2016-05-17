@@ -39,10 +39,6 @@
             this.cos = new System.Windows.Forms.Button();
             this.degree = new System.Windows.Forms.Button();
             this.ln = new System.Windows.Forms.Button();
-            this.sqrt = new System.Windows.Forms.Button();
-            this.exp = new System.Windows.Forms.Button();
-            this.tan = new System.Windows.Forms.Button();
-            this.desimal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArg
@@ -147,55 +143,11 @@
             this.ln.UseVisualStyleBackColor = true;
             this.ln.Click += new System.EventHandler(this.OneArgCalculate);
             // 
-            // sqrt
-            // 
-            this.sqrt.Location = new System.Drawing.Point(35, 327);
-            this.sqrt.Name = "sqrt";
-            this.sqrt.Size = new System.Drawing.Size(89, 101);
-            this.sqrt.TabIndex = 11;
-            this.sqrt.Text = "sqrt";
-            this.sqrt.UseVisualStyleBackColor = true;
-            this.sqrt.Click += new System.EventHandler(this.OneArgCalculate);
-            // 
-            // exp
-            // 
-            this.exp.Location = new System.Drawing.Point(260, 327);
-            this.exp.Name = "exp";
-            this.exp.Size = new System.Drawing.Size(97, 101);
-            this.exp.TabIndex = 13;
-            this.exp.Text = "exp";
-            this.exp.UseVisualStyleBackColor = true;
-            this.exp.Click += new System.EventHandler(this.OneArgCalculate);
-            // 
-            // tan
-            // 
-            this.tan.Location = new System.Drawing.Point(377, 327);
-            this.tan.Name = "tan";
-            this.tan.Size = new System.Drawing.Size(89, 101);
-            this.tan.TabIndex = 14;
-            this.tan.Text = "tan";
-            this.tan.UseVisualStyleBackColor = true;
-            this.tan.Click += new System.EventHandler(this.OneArgCalculate);
-            // 
-            // desimal
-            // 
-            this.desimal.Location = new System.Drawing.Point(143, 327);
-            this.desimal.Name = "desimal";
-            this.desimal.Size = new System.Drawing.Size(97, 101);
-            this.desimal.TabIndex = 15;
-            this.desimal.Text = "x/10";
-            this.desimal.UseVisualStyleBackColor = true;
-            this.desimal.Click += new System.EventHandler(this.OneArgCalculate);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 481);
-            this.Controls.Add(this.desimal);
-            this.Controls.Add(this.tan);
-            this.Controls.Add(this.exp);
-            this.Controls.Add(this.sqrt);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.degree);
             this.Controls.Add(this.cos);
@@ -227,10 +179,6 @@
         protected System.Windows.Forms.Button cos;
         private System.Windows.Forms.Button degree;
         private System.Windows.Forms.Button ln;
-        protected System.Windows.Forms.Button sqrt;
-        protected System.Windows.Forms.Button exp;
-        protected System.Windows.Forms.Button tan;
-        protected System.Windows.Forms.Button desimal;
     }
 }
 

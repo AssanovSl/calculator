@@ -17,18 +17,6 @@ namespace Calculator
                 case "ln":
                     return new Ln();
 
-                case "sqrt":
-                    return new Root();
-
-                case "desimal":
-                    return new Desimal();
-
-                case "exp":
-                    return new Exp();
-
-                case "tan":
-                    return new Tan();
-
                 default:
                     throw new Exception("Неизвестная операция");
             }
