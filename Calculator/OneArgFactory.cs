@@ -29,6 +29,9 @@ namespace Calculator
                 case "ctg":
                     return new Ctan();
 
+                case "Module":
+                    return new Module();
+
                 case "Percent":
                     return new Percent();
 
