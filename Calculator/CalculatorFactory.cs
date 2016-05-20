@@ -26,6 +26,9 @@ namespace Calculator
                 case "desimal":
                     return new Desimal();
 
+                case "Log":
+                    return new Log();
+
                 default:
                     throw new Exception("Неизвестная операция");
                }

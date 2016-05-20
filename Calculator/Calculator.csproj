@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculatorFactory.cs" />
+    <Compile Include="Ctan.cs" />
     <Compile Include="Degree.cs" />
     <Compile Include="Desimal.cs" />
     <Compile Include="Division.cs" />
@@ -58,8 +59,11 @@
     <Compile Include="ICalculator.cs" />
     <Compile Include="IOneCalculator.cs" />
     <Compile Include="Ln.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Module.cs" />
     <Compile Include="Multiplication.cs" />
     <Compile Include="OneArgFactory.cs" />
+    <Compile Include="Percent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cosinus.cs" />

@@ -26,6 +26,12 @@ namespace Calculator
                 case "tan":
                     return new Tan();
 
+                case "ctg":
+                    return new Ctan();
+
+                case "Percent":
+                    return new Percent();
+
                 default:
                     throw new Exception("Неизвестная операция");
             }

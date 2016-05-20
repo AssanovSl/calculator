@@ -43,6 +43,10 @@
             this.exp = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
             this.desimal = new System.Windows.Forms.Button();
+            this.ctg = new System.Windows.Forms.Button();
+            this.Module = new System.Windows.Forms.Button();
+            this.Log = new System.Windows.Forms.Button();
+            this.Percent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstArg
@@ -171,7 +175,7 @@
             // 
             this.tan.Location = new System.Drawing.Point(377, 327);
             this.tan.Name = "tan";
-            this.tan.Size = new System.Drawing.Size(89, 101);
+            this.tan.Size = new System.Drawing.Size(97, 101);
             this.tan.TabIndex = 14;
             this.tan.Text = "tan";
             this.tan.UseVisualStyleBackColor = true;
@@ -183,15 +187,59 @@
             this.desimal.Name = "desimal";
             this.desimal.Size = new System.Drawing.Size(97, 101);
             this.desimal.TabIndex = 15;
-            this.desimal.Text = "x^1/y";
+            this.desimal.Text = "x^(1/y)";
             this.desimal.UseVisualStyleBackColor = true;
             this.desimal.Click += new System.EventHandler(this.Calculate);
+            // 
+            // ctg
+            // 
+            this.ctg.Location = new System.Drawing.Point(35, 445);
+            this.ctg.Name = "ctg";
+            this.ctg.Size = new System.Drawing.Size(89, 101);
+            this.ctg.TabIndex = 16;
+            this.ctg.Text = "ctg";
+            this.ctg.UseVisualStyleBackColor = true;
+            this.ctg.Click += new System.EventHandler(this.OneArgCalculate);
+            // 
+            // Module
+            // 
+            this.Module.Location = new System.Drawing.Point(143, 445);
+            this.Module.Name = "Module";
+            this.Module.Size = new System.Drawing.Size(89, 101);
+            this.Module.TabIndex = 17;
+            this.Module.Text = "|x|";
+            this.Module.UseVisualStyleBackColor = true;
+            this.Module.Click += new System.EventHandler(this.OneArgCalculate);
+            // 
+            // Log
+            // 
+            this.Log.Location = new System.Drawing.Point(260, 445);
+            this.Log.Name = "Log";
+            this.Log.Size = new System.Drawing.Size(97, 101);
+            this.Log.TabIndex = 18;
+            this.Log.Text = "Log(y)X";
+            this.Log.UseVisualStyleBackColor = true;
+            this.Log.Click += new System.EventHandler(this.Calculate);
+            // 
+            // Percent
+            // 
+            this.Percent.Location = new System.Drawing.Point(377, 445);
+            this.Percent.Name = "Percent";
+            this.Percent.Size = new System.Drawing.Size(97, 101);
+            this.Percent.TabIndex = 19;
+            this.Percent.Text = "%";
+            this.Percent.UseVisualStyleBackColor = true;
+            this.Percent.Click += new System.EventHandler(this.OneArgCalculate);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 481);
+            this.ClientSize = new System.Drawing.Size(507, 567);
+            this.Controls.Add(this.Percent);
+            this.Controls.Add(this.Log);
+            this.Controls.Add(this.Module);
+            this.Controls.Add(this.ctg);
             this.Controls.Add(this.desimal);
             this.Controls.Add(this.tan);
             this.Controls.Add(this.exp);
@@ -231,6 +279,10 @@
         protected System.Windows.Forms.Button exp;
         protected System.Windows.Forms.Button tan;
         protected System.Windows.Forms.Button desimal;
+        protected System.Windows.Forms.Button ctg;
+        protected System.Windows.Forms.Button Module;
+        protected System.Windows.Forms.Button Log;
+        protected System.Windows.Forms.Button Percent;
     }
 }
 
