@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorFactory.cs" />
+    <Compile Include="TwoArg\CalculatorFactory.cs" />
     <Compile Include="OneArg\Ctan.cs" />
     <Compile Include="TwoArg\Degree.cs" />
     <Compile Include="TwoArg\Desimal.cs" />
@@ -56,13 +56,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ICalculator.cs" />
-    <Compile Include="IOneCalculator.cs" />
+    <Compile Include="TwoArg\ICalculator.cs" />
+    <Compile Include="OneArg\IOneCalculator.cs" />
     <Compile Include="OneArg\Ln.cs" />
     <Compile Include="TwoArg\Log.cs" />
     <Compile Include="OneArg\Module.cs" />
     <Compile Include="TwoArg\Multiplication.cs" />
-    <Compile Include="OneArgFactory.cs" />
+    <Compile Include="OneArg\OneArgFactory.cs" />
     <Compile Include="OneArg\Percent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
