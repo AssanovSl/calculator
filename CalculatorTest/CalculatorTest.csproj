@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgTests\CosinusTests.cs" />
+    <Compile Include="OneArgTests\CtanTests.cs" />
+    <Compile Include="OneArgTests\ExpTests.cs" />
+    <Compile Include="OneArgTests\LnTests.cs" />
+    <Compile Include="OneArgTests\ModuleTests.cs" />
+    <Compile Include="OneArgTests\PercentTests.cs" />
     <Compile Include="OneArgTests\RootTests.cs" />
     <Compile Include="OneArgTests\SinusTests.cs" />
+    <Compile Include="OneArgTests\TanTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgTests\DivisionTests.cs" />
     <Compile Include="TwoArgTests\MultiplicationTests.cs" />
