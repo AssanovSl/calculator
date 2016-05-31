@@ -47,12 +47,15 @@
     <Compile Include="OneArgTests\CtanTests.cs" />
     <Compile Include="OneArgTests\ExpTests.cs" />
     <Compile Include="OneArgTests\LnTests.cs" />
+    <Compile Include="OneArgTests\LogTests.cs" />
     <Compile Include="OneArgTests\ModuleTests.cs" />
     <Compile Include="OneArgTests\PercentTests.cs" />
     <Compile Include="OneArgTests\RootTests.cs" />
     <Compile Include="OneArgTests\SinusTests.cs" />
     <Compile Include="OneArgTests\TanTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwoArgTests\DegreeTests.cs" />
+    <Compile Include="TwoArgTests\DesimalTests.cs" />
     <Compile Include="TwoArgTests\DivisionTests.cs" />
     <Compile Include="TwoArgTests\MultiplicationTests.cs" />
     <Compile Include="TwoArgTests\SummTests.cs" />
