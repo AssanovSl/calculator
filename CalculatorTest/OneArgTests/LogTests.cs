@@ -1,4 +1,5 @@
-﻿using Calculator;
+﻿using System;
+using Calculator.TwoArg;
 using NUnit.Framework;
 
 namespace CalculatorTest.OneArgTests
@@ -14,6 +15,13 @@ namespace CalculatorTest.OneArgTests
             ICalculator calculator = new Log();
             double result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result, 0.00001);
+        }
+        [Test]
+        public void LogTest()
+        {
+            ICalculator calculator = new Log();
+            Assert.Throws<ArgumentException>(() => calculator.Calculate(452, 0));
+
         }
     }
 }

@@ -1,10 +1,18 @@
-﻿namespace Calculator
+﻿using System;
+
+namespace Calculator.TwoArg
 {
-    public class Division:ICalculator
+    public class Division : ICalculator
     {
         public double Calculate(double firstArg, double secondArg)
         {
-            return firstArg / secondArg;
-        } 
+            if (secondArg == 0)
+            {
+                throw new ArgumentException("деление на нуль не возможно", "secondArg");
+            }
+            return firstArg/secondArg;
+            
+        }
     }
+
 }

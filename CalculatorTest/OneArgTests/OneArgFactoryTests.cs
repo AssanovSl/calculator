@@ -1,10 +1,10 @@
 ﻿using System;
-using Calculator;
+using Calculator.OneArg;
 using NUnit.Framework;
 
 namespace CalculatorTest.OneArgTests
 {
-    public class OneArgFactoryTests
+    public class OneArgFactoryTests 
     {
         [TestCase("sin", typeof(Sinus))]
         [TestCase("cos", typeof(Cosinus))]

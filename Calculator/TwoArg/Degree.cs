@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculator
+namespace Calculator.TwoArg
 {
     public class Degree : ICalculator
     {
@@ -8,7 +8,5 @@ namespace Calculator
         {
             return Math.Pow(firstArg, secondArg);
         }
-
-
     }
 }

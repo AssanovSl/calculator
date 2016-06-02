@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.OneArg
 {
     public class Percent : IOneCalculator
     {

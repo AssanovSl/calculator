@@ -1,4 +1,5 @@
-﻿using Calculator;
+﻿using System;
+using Calculator.OneArg;
 using NUnit.Framework;
 
 namespace CalculatorTest.OneArgTests
@@ -14,6 +15,12 @@ namespace CalculatorTest.OneArgTests
             IOneCalculator calculator = new Ctan();
             double result = calculator.OneArgCalculate(firstValue);
             Assert.AreEqual(expected, result, 0.00001);
+        }
+        [Test]
+        public void CtanTest()
+        {
+            IOneCalculator calculator = new Ctan();
+            Assert.Throws<ArgumentException>(() => calculator.OneArgCalculate(0));
         }
     }
 }

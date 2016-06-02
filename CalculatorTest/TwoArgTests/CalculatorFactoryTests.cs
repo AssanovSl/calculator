@@ -1,5 +1,5 @@
 ﻿using System;
-using Calculator;
+using Calculator.TwoArg;
 using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgTests

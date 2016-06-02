@@ -1,12 +1,12 @@
 ﻿using System;
-namespace Calculator
+
+namespace Calculator.TwoArg
 {
-  
-        public class Desimal : ICalculator
+    public class Desimal : ICalculator
     {
         public double Calculate(double firstArg, double secondArg)
         {
             return Math.Pow(firstArg, 1 / secondArg);
-        } 
+        }
     }
 }

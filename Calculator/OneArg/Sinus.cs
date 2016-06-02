@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Calculator
+namespace Calculator.OneArg
 {
    public class Sinus:IOneCalculator
     {

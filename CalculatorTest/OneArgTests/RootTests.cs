@@ -1,4 +1,6 @@
-﻿using Calculator;
+﻿using System;
+using Calculator.OneArg;
+using Calculator.TwoArg;
 using NUnit.Framework;
 
 
@@ -15,6 +17,12 @@ namespace CalculatorTest.OneArgTests
             IOneCalculator calculator = new Root();
             double result = calculator.OneArgCalculate(firstValue);
             Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void RootTest()
+        {
+            IOneCalculator calculator = new Root();
+            Assert.Throws<ArgumentException>(() => calculator.OneArgCalculate(-8));
         }
     }
 }
