@@ -7,8 +7,8 @@ namespace CalculatorTest.OneArgTests
     public class LnTests
     {
          [TestCase(1, 0)]
-         [TestCase(2, 0.69314)]
-         [TestCase(3, 1.09861)]
+         [TestCase(2, 0.30102)]
+         [TestCase(3, 0.47712)]
          public void LnTest(double firstValue, double expected)
          {
              IOneCalculator calculator = new Ln();
