@@ -12,7 +12,6 @@ namespace Calculator
             InitializeComponent();
         }
 
-
         private void Calculate(object sender, EventArgs e)
         {
             try
@@ -29,9 +28,7 @@ namespace Calculator
             catch (Exception exc)
             {
                 MessageBox.Show("Некорректны данные \n" + exc.Message);
-
-            }
-            
+            }    
         }
 
         private void OneArgCalculate(object sender, EventArgs e)
@@ -49,11 +46,7 @@ namespace Calculator
             catch (Exception excpOneArg)
             {
                 MessageBox.Show("Некорректны данные \n" + excpOneArg.Message);
- 
             }
-            
         }
-
-
     }
 }

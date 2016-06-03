@@ -2,6 +2,9 @@
 
 namespace Calculator.OneArg
 {
+    /// <summary>
+    /// класс реализующий функцию вычисления квадратного корня
+    /// </summary>
     public class Root : IOneCalculator
     {
         public double OneArgCalculate(double firstArg)

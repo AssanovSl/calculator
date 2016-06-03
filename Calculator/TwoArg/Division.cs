@@ -2,6 +2,9 @@
 
 namespace Calculator.TwoArg
 {
+    /// <summary>
+    /// класс реализующий функцию деления
+    /// </summary>
     public class Division : ICalculator
     {
         public double Calculate(double firstArg, double secondArg)

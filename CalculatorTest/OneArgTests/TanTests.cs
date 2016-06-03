@@ -19,7 +19,7 @@ namespace CalculatorTest.OneArgTests
         public void TanTest()
         {
             IOneCalculator calculator = new Tan();
-            Assert.Throws<ArgumentException>(() => calculator.OneArgCalculate(1.5708));
+            Assert.Throws<ArgumentException>(() => calculator.OneArgCalculate(Math.PI / 2));
         }
     }
 }

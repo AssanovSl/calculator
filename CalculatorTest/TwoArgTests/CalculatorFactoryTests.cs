@@ -13,8 +13,6 @@ namespace CalculatorTest.TwoArgTests
         [TestCase("degree", typeof(Degree))]
         [TestCase("desimal", typeof(Desimal))]
         [TestCase("Log", typeof(Log))]
-       
-
         public void OneArgFactoryTest(string name, Type type)
         {
             ICalculator calculator = CalculatorFactory.CreateCalculator(name);

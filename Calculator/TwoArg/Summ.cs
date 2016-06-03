@@ -1,6 +1,9 @@
 ﻿namespace Calculator.TwoArg
 {
-    public class Summ:ICalculator
+    /// <summary>
+    /// интерфейс калькулятора, для двух аргументов
+    /// </summary>
+    public class Summ : ICalculator
     {
         public double Calculate(double firstArg, double secondArg)
         {

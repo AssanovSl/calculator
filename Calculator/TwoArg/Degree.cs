@@ -2,6 +2,9 @@
 
 namespace Calculator.TwoArg
 {
+    /// <summary>
+    /// класс реализующий функцию возведение в n-ую степень
+    /// </summary>
     public class Degree : ICalculator
     {
         public double Calculate(double firstArg, double secondArg)
